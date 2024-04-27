@@ -1,0 +1,10 @@
+spring:
+  profiles:
+    active: default
+  cloud:
+    config:
+      uri: http://localhost:8888
+      name: users
+      logging:
+        level:
+          org.springframework.cloud.config: DEBUG
