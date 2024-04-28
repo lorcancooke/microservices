@@ -24,3 +24,34 @@ returns
 }
 
 Delete http://localhost:8081/users/1
+
+post http://localhost:9092/users/
+{
+    "firstName": "Lorcan",
+    "lastName": "Cooke",
+    "userName": "Cookie",
+    "age": 18,
+    "email": "lorcancooke@gmail.com",
+    "passwordHash": "password"
+}
+
+
+get http://localhost:9092/users/1
+
+{
+    "userdata": {
+        "usersId": 1,
+        "firstName": "Lorcan",
+        "lastName": "Cooke",
+        "userName": "Cookie",
+        "age": 18,
+        "email": "lorcancooke@gmail.com",
+        "passwordHash": "password"
+    },
+    "userPreferences": {
+        "userId": 1,
+        "darkMode": true,
+        "userLanguage": "Irish",
+        "userStatus": "At the game today"
+    }
+}
