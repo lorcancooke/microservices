@@ -1,14 +1,13 @@
-package com.example.users;
+package com.example.userspreferences;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class UserApplication {
+public class UserspreferencesApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(UserApplication.class, args);
+		SpringApplication.run(UserspreferencesApplication.class, args);
 	}
 
 }
-

@@ -1,10 +1,10 @@
 spring:
   profiles:
-    active: dev
+    active: default
   cloud:
     config:
       uri: http://localhost:8888
-      name: userservices
+      name: userspreferences
       logging:
         level:
           org.springframework.cloud.config: DEBUG
