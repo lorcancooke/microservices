@@ -15,7 +15,12 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     public Long userId;
-    private String customerName;
-    private String customerAddress;
-    private String customerBio;
+    private Boolean darkMode;
+    private String userLanguage;
+    private String userStatus;
+
+    public Boolean getDarkMode() {
+        return darkMode;
+    }
+
 }

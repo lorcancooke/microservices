@@ -1,7 +1,26 @@
-Post http://localhost:9091/users/
+Post http://localhost:8081/users/
 {
-    "customerName": "Lorcan Cooke",
-    "customerAddress": "Dublin",
-    "customerBio": "This is my bio"
+    "darkMode": true,
+    "userLanguage": "Irish",
+    "userStatus": "At the game today"
 }
 
+Put http://localhost:8081/users/1
+{
+    "darkMode": true,
+    "userLanguage": "English",
+    "userStatus": "At the game today"
+}
+
+
+Get http://localhost:8081/users/1
+
+returns 
+{
+    "userId": 1,
+    "darkMode": true,
+    "userLanguage": "Irish",
+    "userStatus": "At the game today"
+}
+
+Delete http://localhost:8081/users/1
