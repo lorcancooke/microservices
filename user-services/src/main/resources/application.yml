@@ -1,13 +1,23 @@
-#server:
-#  port: 9091
-
+server:
+  port: 9091
 spring:
-  profiles:
-    active: dev
-  cloud:
-    config:
-      uri: http://localhost:8888
-      name: userservices
-      logging:
-        level:
-          org.springframework.cloud.config: DEBUG
+  application:
+    name: userservices
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    registerWithEureka: true
+    fetchRegistry: true
+  instance:
+    hostname: localhost
+#spring:
+#  profiles:
+#    active: dev
+#  cloud:
+#    config:
+#      uri: http://localhost:8888
+#      name: userservices
+#      logging:
+#        level:
+#          org.springframework.cloud.config: DEBUG

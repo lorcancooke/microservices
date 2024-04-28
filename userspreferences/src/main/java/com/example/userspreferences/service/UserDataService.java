@@ -32,7 +32,7 @@ public class UserDataService {
         Optional<Userdata> userDataOptional = userDataRepository.findById(usersId);
         if (userDataOptional.isPresent()) {
             Userdata userData = userDataOptional.get();
-            String preferencesServiceUrl = "http://localhost:9091/userpreferences/{id}";
+            String preferencesServiceUrl = "http://USERSERVICES/userpreferences/{id}";
             UserPreferences userPreferences = null;
             try {
                 userPreferences = restTemplate.getForObject(preferencesServiceUrl, UserPreferences.class, usersId);
