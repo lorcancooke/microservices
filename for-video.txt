@@ -1,0 +1,7 @@
+Post http://localhost:9091/users/
+{
+    "customerName": "Lorcan Cooke",
+    "customerAddress": "Dublin",
+    "customerBio": "This is my bio"
+}
+
